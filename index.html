@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAID Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>RAID Shadow Legends Management</h1>
+    </header>
+
+    <section>
+        <h2>Arena Reminder</h2>
+        <div id="timer">
+            <label for="timeSlider">Set Timer:</label>
+            <input type="range" id="timeSlider" min="0" max="900" value="0">
+            <span id="sliderValue">00:00</span>
+
+            <br><br>
+
+            <button id="set15MinutesButton">15 Minutes</button>
+
+            <!-- Container for Start and Stop buttons -->
+            <div id="actionButtonContainer">
+                <button id="startButton">Start</button>
+                <button id="stopButton">Stop</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+      <h2>Market Reminder</h2>
+      <div id="marketTimer">
+        <label for="marketTimeSlider">Market Countdown:</label>
+        <input type="range" id="marketTimeSlider" min="0" max="3600" value="0">
+        <span id="marketSliderValue">00:00</span>
+
+        <br><br>
+
+        <!-- Market Timer Buttons -->
+        <button id="set1HourButton">1 Hour</button>
+
+        <!-- Container for Start and Stop buttons for Market Timer -->
+        <div id="marketActionButtonContainer">
+          <button id="startMarketButton">Start</button>
+          <button id="stopMarketButton">Stop</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Log Section -->
+    <section>
+      <h2>Log</h2>
+      <div id="logSection">
+        <ul id="logList">
+          <!-- Log entries will be added here dynamically via JavaScript -->
+        </ul>
+        <button id="clearLogButton">Clear Log</button>
+      </div>
+    </section>
+
+    <footer>
+        <p>Parad0x13 2025</p>
+    </footer>
+
+    <audio id="alarmSound" src="alarm.wav" preload="auto"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
